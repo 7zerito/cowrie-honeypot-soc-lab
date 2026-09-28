@@ -30,6 +30,15 @@ Event classification
 ↓  
 Discord Alerts
 
+## Project Highlights
+
+- Deployed Cowrie and n8n in Docker inside an Ubuntu Server VM.
+- Persisted Cowrie JSON logs outside the container.
+- Built a systemd event forwarder to send new Cowrie events to n8n automatically.
+- Classified SSH login and command events in n8n.
+- Filtered low-value commands such as `exit` and `logout`.
+- Sent high-severity alerts to Discord using webhooks.
+  
 ## Technologies Used
 
 - Ubuntu Server
@@ -88,4 +97,17 @@ This project helped me gain hands-on experience with:
 
 ## Screenshots
 
-Screenshots of the Docker environment, n8n workflow, Cowrie events, systemd service and Discord alerts are included in the `screenshots` directory.
+### Docker Services
+![Docker services](screenshots/docker-services.png)
+
+### n8n Workflow
+![n8n workflow](screenshots/n8n-workflow.png)
+
+### Discord Alerts
+![Discord alerts](screenshots/discord-alert.png)
+
+### systemd Forwarder
+![systemd forwarder](screenshots/systemd-forwarder.png)
+
+### Cowrie JSON Events
+![Cowrie JSON events](screenshots/cowrie-json-events.png)
